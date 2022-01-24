@@ -1,0 +1,29 @@
+
+
+
+@port = 8080
+
+GET http://localhost:3000/api/usuarios  HTTP/1.1
+
+GET http://localhost:3000/api/usuarios/5  HTTP/1.1
+
+POST http://localhost:3000/api/usuarios HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "sample"
+}
+
+PUT http://localhost:3000/api/usuarios/1 HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "sa"
+}
+
+DELETE http://localhost:3000/api/usuarios/1 HTTP/1.1
+
+POST url HTTP/1.1
+header name: header value
+
+content
